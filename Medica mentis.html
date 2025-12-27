@@ -1,0 +1,275 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Medica Mentis | Simplifying Medical Education</title>
+
+<meta name="description" content="Medica Mentis helps CEE and MBBS students learn medical concepts clearly with videos, notes, and MCQs.">
+
+<style>
+/* ---------- GLOBAL ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f7f9fc;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ---------- NAVBAR ---------- */
+header {
+  position: sticky;
+  top: 0;
+  background: #0b5ed7;
+  color: white;
+  padding: 12px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+header a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  background: linear-gradient(135deg, #0b5ed7, #198754);
+  color: white;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  background: white;
+  color: #0b5ed7;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.alt {
+  background: #eef3f9;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+/* ---------- GRID ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ---------- VIDEO ---------- */
+iframe {
+  width: 100%;
+  max-width: 720px;
+  height: 405px;
+  border-radius: 12px;
+  border: none;
+}
+
+/* ---------- MCQ ---------- */
+.mcq-box {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #0b5ed7;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <div class="logo">🩺 Medica Mentis</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#subjects">Subjects</a>
+    <a href="#videos">Videos</a>
+    <a href="#notes">Notes</a>
+    <a href="#mcqs">MCQs</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <h1>Simplifying Medical Education</h1>
+  <p>CEE • MBBS • Concept-based learning</p>
+  <a class="btn" href="https://www.youtube.com/@MedicaMentis" target="_blank">
+    Subscribe on YouTube
+  </a>
+</section>
+
+<!-- SUBJECTS -->
+<section id="subjects">
+  <h2>Subjects Covered</h2>
+  <div class="grid">
+    <div class="card">Physics</div>
+    <div class="card">Chemistry</div>
+    <div class="card">Zoology</div>
+    <div class="card">Botany</div>
+    <div class="card">MAT</div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos" class="alt">
+  <h2>Latest Videos</h2>
+  <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=MedicaMentis" allowfullscreen></iframe>
+</section>
+
+<!-- NOTES -->
+<section id="notes">
+  <h2>Free Notes & Resources</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Physics</h3>
+      <p>Exam-oriented summaries</p>
+      <p><b>Coming Soon</b></p>
+    </div>
+    <div class="card">
+      <h3>Chemistry</h3>
+      <p>Concept + PYQs</p>
+      <p><b>Coming Soon</b></p>
+    </div>
+    <div class="card">
+      <h3>Zoology</h3>
+      <p>Tables & flowcharts</p>
+      <p><b>Coming Soon</b></p>
+    </div>
+       <div class="card">
+      <h3>Botany</h3>
+      <p>Tables & flowcharts</p>
+      <p><b>Coming Soon</b></p>
+    </div>
+       <div class="card">
+      <h3>MAT</h3>
+      <p>Tables & flowcharts</p>
+      <p><b>Coming Soon</b></p>
+    </div>
+  </div>
+</section>
+
+<!-- MCQS -->
+<section id="mcqs" class="alt">
+  <h2>Practice MCQs</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>PYQS MCQs</h3>
+      <p>Topic-wise practice questions</p>
+      <a class="btn" href="mcqs/PYQS.html">Start</a>
+    </div>
+
+    <div class="card">
+      <h3>zoology MCQs</h3>
+      <p>High-yield exam questions</p>
+      <a class="btn" href="mcqs/zoology.html">Start</a>
+    </div>
+
+    <div class="card">
+      <h3>Mock test MCQs</h3>
+      <p>CEE & MBBS focused</p>
+      <a class="btn" href="mcqs/Mock test.html">Start</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Medica Mentis</h2>
+  <p>
+    Medica Mentis is a student-focused medical education platform designed to help
+    CEE and MBBS students understand medical subjects clearly, logically, and in
+    an exam-oriented way.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="alt">
+  <h2>Connect With Us</h2>
+  <p>Learn medicine with clarity and confidence.</p>
+  <a class="btn" href="https://www.youtube.com/@MedicaMentis" target="_blank">
+    Visit YouTube Channel
+  </a>
+</section>
+
+<footer>
+  <p>© 2025 Medica Mentis | Medical Education Platform</p>
+</footer>
+
+<script>
+console.log("Medica Mentis website loaded successfully");
+</script>
+
+</body>
+</html>
